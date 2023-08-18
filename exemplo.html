@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo API Janela Aviso</title>
+        <script src="apiJanelaAviso.js"></script>
+        <script src="estiloJanelaAviso.css" type="css"></script>
+        <script>
+            var objApi = new apiJanelaAviso("objApi");
+            console.log(objApi);
+
+            var objLocalJanelaAviso = document.getElementsByTagName("body");
+            var testeDiv = document.createElement("div");
+			testeDiv.setAttribute("id","divJanelaAviso100");
+            //objLocalJanelaAviso.appendChild(testeDiv);
+            console.log(objLocalJanelaAviso);
+            console.log(testeDiv);
+
+            //debugger;
+            //objApi.montaJanelaAviso("alert", "Teste Exemplo", "Texto do alert");            
+        </script>
+    </head>
+    <body>
+            <div id="divJanelaAvisoALERT"></div>
+    </body>
+</html>
